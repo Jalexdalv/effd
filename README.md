@@ -1,4 +1,4 @@
-# effd
+# EFFD: An Unsupervised Surface Defect Detection Method Based on Estimation and Fusion of Normal Sample Feature Distribution
 ## Train
 ```
 python main.py
