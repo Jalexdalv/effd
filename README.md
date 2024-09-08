@@ -32,7 +32,7 @@ python main.py
 ## Test
 ```
 python main.py
---mode train 
+--mode test 
 --plus 1 
 --device 0 
 --num_workers 15 
