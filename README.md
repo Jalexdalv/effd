@@ -1,6 +1,7 @@
 # effd
 ## Train
-`python main.py --mode train \
+```
+python main.py --mode train \
 --plus 1 \
 --device 0 \
 --batch_size 4 
@@ -25,4 +26,5 @@
 --weights [8,4,1], [8,1,1], [1,4,8] 
 --data_path data 
 --pretrain_path pretrain 
---evaluate_interval 1`
+--evaluate_interval 1
+```
