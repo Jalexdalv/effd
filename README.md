@@ -1,8 +1,8 @@
 # effd
 ## Train
-`python main.py --mode train 
---plus 1 
---device 0 
+`python main.py --mode train \
+--plus 1 \
+--device 0 \
 --batch_size 4 
 --num_workers 15 
 --image_size 256, 256 
