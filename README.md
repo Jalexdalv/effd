@@ -1,9 +1,10 @@
 # effd
 ## Train
 ```
-python main.py --mode train \
---plus 1 \
---device 0 \
+python main.py
+--mode train 
+--plus 1 
+--device 0 
 --batch_size 4 
 --num_workers 15 
 --image_size 256, 256 
@@ -27,4 +28,28 @@ python main.py --mode train \
 --data_path data 
 --pretrain_path pretrain 
 --evaluate_interval 1
+```
+## Test
+```
+python main.py
+--mode train 
+--plus 1 
+--device 0 
+--num_workers 15 
+--image_size 256, 256 
+--levels level_2_1, level_2_2, level_3_1, level_3_2, level_3_3, level_3_4, level_4_1, level_4_2, level_4_3, level_4_4 
+--pool avgpool 
+--padding_mode reflect 
+--gamma 4 
+--alpha 3 
+--betas 2, 2, 2 
+--eta 8, 8 
+--sigma 4, 4 
+--dataset mvtec 
+--categories tile, wood, cable 
+--weights [8,4,1], [8,1,1], [1,4,8] 
+--data_path data 
+--pretrain_path pretrain
+--result_path result
+--expect_fprs 0.0001, 0.0005, 0.001
 ```
